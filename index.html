@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Inner Peace: Your Meditation Journey Awaits</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* A calming green */
+            --secondary-color: #6A1B9A; /* A deep purple for contrast */
+            --text-color: #333;
+            --light-text-color: #f4f4f4;
+            --background-light: #f9f9f9;
+            --background-dark: #2c3e50;
+            --accent-color: #FFC107; /* A warm yellow for highlights */
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #81C784); /* Adjusted gradient angle */
+            color: var(--light-text-color);
+            padding: 50px 0; /* Increased padding */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2em; /* Slightly larger heading */
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Added text shadow */
+        }
+
+        header p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            padding: 60px 0;
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+        }
+
+        .hero-content {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .hero-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+            margin-top: 20px; /* Space above buttons */
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .swami-image {
+            flex: 1; /* Adjust flex as needed */
+            min-width: 200px; /* Minimum width for the Swami's image */
+            max-width: 300px; /* Max width to keep it from dominating */
+            text-align: center;
+            display: flex; /* Use flex to center the image itself */
+            justify-content: center;
+            align-items: center;
+            padding: 10px; /* Add some padding around the image */
+        }
+
+        .swami-image img {
+            max-width: 100%; /* Ensure image fits within its flex container */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            background-color: #5cb85c;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: #8E24AA; /* Darker purple on hover */
+        }
+
+
+        .features, .obstacles-section, .testimonials, .call-to-action {
+            padding: 60px 0;
+        }
+
+        .features {
+            background-color: var(--background-light);
+            text-align: center;
+        }
+
+        .features h2, .obstacles-section h2, .testimonials h2, .call-to-action h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2em;
+            color: var(--secondary-color);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .feature-item {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-item h3 {
+            font-size: 1.5em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        /* New section specific styles */
+        .obstacles-section {
+            background-color: #e8f5e9; /* A slightly darker light green */
+            color: var(--text-color);
+            text-align: center;
+        }
+
+        .obstacles-section .content-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            list-style: none; /* Remove default list style */
+            padding: 0;
+            margin: 0;
+        }
+
+        .obstacles-section .content-list li {
+            background-color: #fff;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            flex: 1 1 300px; /* Allows items to grow/shrink, minimum width 300px */
+            max-width: 45%; /* Two columns on larger screens */
+            text-align: left;
+            font-size: 1.05em;
+            position: relative;
+            padding-left: 35px; /* Space for custom bullet */
+        }
+
+        .obstacles-section .content-list li::before {
+            content: '✓'; /* Custom checkmark bullet */
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+
+        .testimonials {
+            background-color: #f0f8f0; /* A very light green */
+            padding-top: 40px;
+        }
+
+        .testimonial-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .testimonial-item {
+            flex: 1;
+            min-width: 280px;
+            max-width: 400px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            position: relative;
+        }
+
+        .testimonial-item p {
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .testimonial-item .author {
+            font-weight: 600;
+            color: var(--secondary-color);
+            text-align: right;
+            display: block;
+        }
+
+        .call-to-action {
+            background: linear-gradient(to right, var(--secondary-color), #9C27B0);
+            color: var(--light-text-color);
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .call-to-action h2 {
+            color: var(--accent-color);
+            font-size: 2.8em;
+            margin-bottom: 20px;
+        }
+
+        .call-to-action p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer {
+            background-color: var(--background-dark);
+            color: var(--light-text-color);
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .hero {
+                flex-direction: column; /* Stack content and images */
+            }
+
+            .hero-content, .hero-image, .swami-image {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .swami-image {
+                order: -1; /* Place Swami image above content on small screens */
+            }
+
+            .hero-content h2 {
+                font-size: 2em;
+            }
+
+            .btn {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+
+            .feature-grid, .testimonial-grid {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .feature-item, .testimonial-item {
+                max-width: 90%; /* Allow wider on smaller screens */
+            }
+
+            .obstacles-section .content-list li {
+                max-width: 90%; /* Single column on smaller screens */
+            }
+
+            .call-to-action h2 {
+                font-size: 2.2em;
+            }
+
+            .call-to-action p {
+                font-size: 1.1em;
+            }
+
+            .hero-actions {
+                flex-direction: column; /* Stack buttons vertically on small screens */
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .hero-content h2 {
+                font-size: 1.8em;
+            }
+
+            .hero-content p {
+                font-size: 1em;
+            }
+
+            .features h2, .obstacles-section h2, .testimonials h2, .call-to-action h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Concentration & Meditation</h1>
+            <p>Your journey to profound inner peace and mindful living begins here. Unlock the secrets to a calmer, happier you with our expertly crafted meditation guide.</p>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <div class="hero-content">
+            <h2>Transform Your Life with Daily Meditation</h2>
+            <p>Feeling overwhelmed, stressed, or just looking for a deeper sense of calm? Our comprehensive PDF guide, <b>"Concentration & Meditation"</b> is designed for both <strong>beginners</strong> and <strong>experienced</strong> practitioners.</p>
+            <p>What makes this guide truly unique is that its core teachings and wisdom are **derived directly from the profound works of H.H. Sri Swami Sivananda Saraswati, the revered founder of The Divine Life Society.** You're not just getting a guide; you're gaining access to timeless spiritual knowledge, presented in an accessible format for modern living.</p>
+            <p>Learn simple yet powerful techniques to quiet your mind, reduce anxiety, and cultivate a lasting state of well-being. This isn't just a guide; it's your personal sanctuary in a PDF, rooted in authentic spiritual tradition.</p>
+            <div class="hero-actions">
+                <a href="https://superprofile.bio/vp/684efd331eb1db00139677ac" class="btn">Get Your Guide Now!</a>
+            </div>
+        </div>
+        <div class="swami-image">
+            <img src="./capture.png" alt="Yogi in Meditation with Chakras" fetchpriority="high">
+        </div>
+        <div class="hero-image">
+            <img src="https://imgv2-1-f.scribdassets.com/img/word_document/868685444/original/432x574/f841241d5c/1748482892?v=1" alt="Meditation PDF Cover">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>What You'll Gain From This Guide</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Authentic Wisdom</h3>
+                    <p>Benefit from the profound and practical teachings of Swami Sivananda, making your meditation practice deeply meaningful and effective.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Reduced Stress & Anxiety</h3>
+                    <p>Discover practical exercises to calm your nervous system and bring a profound sense of peace into your daily life.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Enhanced Focus & Clarity</h3>
+                    <p>Improve your concentration and mental sharpness, helping you be more productive and present in every moment.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Deeper Sleep & Relaxation</h3>
+                    <p>Learn techniques to unwind before bed, promoting restful sleep and waking up refreshed and energized.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Emotional Balance</h3>
+                    <p>Develop resilience and a greater capacity to navigate life's challenges with grace and equanimity.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Accessible & Practical</h3>
+                    <p>Easy-to-follow instructions and bite-sized practices mean you can meditate anytime, anywhere, even with a busy schedule.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="obstacles-section">
+        <div class="container">
+            <h2>Overcome Common Obstacles to Meditation</h2>
+            <p>Our guide, drawing from Swami Sivananda's extensive teachings, delves into common challenges faced during meditation and provides practical solutions. This ensures you can overcome hurdles and cultivate a consistent, fruitful practice. Here's a glimpse of the obstacles addressed in the PDF:</p>
+            <ul class="content-list">
+                <li>Aimless Wandering</li>
+                <li>Cessation of Sadhana</li>
+                <li>Deha-Adhyasa</li>
+                <li>Diseases</li>
+                <li>Discussing Too Much</li>
+                <li>Environments</li>
+                <li>Evil Company</li>
+                <li>Fault-Finding</li>
+                <li>Habit of Self-Justification</li>
+                <li>Impulses</li>
+                <li>Impure and Immoderate Food</li>
+                <li>Irregularity in Sadhana</li>
+                <li>Jerks</li>
+                <li>Lack of Brahmacharya</li>
+                <li>Ojas</li>
+                <li>Lack of Yama and Niyama</li>
+                <li>Lingual Diarrhoea</li>
+                <li>Need for a Preceptor</li>
+                <li>Overeating, etc.</li>
+                <li>Poor Health</li>
+                <li>So-called Friends</li>
+                <li>Social Nature</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Hear From Our Happy Meditators</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <p>"This PDF changed my life! The integration of Swami Sivananda's wisdom made it truly profound. I used to struggle with anxiety, but the guided meditations have given me tools to find peace every day. Highly recommend!"</p>
+                    <span class="author">- Priya Sharma, Marketing Professional</span>
+                </div>
+                <div class="testimonial-item">
+                    <p>"As a beginner, I found this guide incredibly easy to follow. The insights, rooted in the teachings of The Divine Life Society, are profound, and the practices are genuinely effective. I feel much calmer and more focused."</p>
+                    <span class="author">- Rajesh Kumar, Software Engineer</span>
+                </div>
+                <div class="testimonial-item">
+                    <p>"I've tried many meditation apps, but having this comprehensive guide in a PDF format, knowing it carries the essence of Swami Sivananda's teachings, is fantastic. I can access it anywhere, and the content is truly transformative."</p>
+                    <span class="author">- Ananya Singh, Yoga Instructor</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action" id="buy-now">
+        <div class="container">
+            <h2>Ready to Embrace Your Peaceful Journey?</h2>
+            <p>For a limited time, get your copy of "Concentration & Meditation" filled with the wisdom of Swami Sivananda, for just <span style="font-weight: bold; color: var(--accent-color);">₹499</span> (original price ₹999).</p>
+            <p>Stop wishing for peace and start living it. Click below to secure your guide and begin your transformation today!</p>
+            <a href="https://superprofile.bio/vp/684efd331eb1db00139677ac" class="btn" style="background-color: var(--accent-color); color: var(--secondary-color);">Purchase Your PDF Now!</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a href="/privacy">Privacy & Policy<a>
+            <p>&copy; 2025 Meditation Moments. All rights reserved.</p>
+            <p>Designed with ❤️ for your well-being.</p>
+            <p>Inspired by the timeless wisdom of H.H. Sri Swami Sivananda Saraswati and The Divine Life Society.</p>
+            <p>IMPORTANT This site is not part of the Facebook website or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
